@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+}
+.wj-banner1{
+	width:100%;
+	height:450px;
+	background: green;
+	margin:0px auto;
+	position: relative;
+}
+.wj-bigBanner{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width:300%;
+	height: 100%;
+	background: red;
+}
+.wj-bigBanner li{
+	float: left;
+	width:33.333%;
+	height: 100%;
+}
+.wj-bigBanner li img{
+	width: 100%;
+	height:100%;
+}
+.wj-page{
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 53px;
+	margin: 0px auto;
+	width:100px;
+	height: 8px;
+}
+.wj-page li{
+	width:8px;
+	height: 8px;
+	border-radius:10px;
+	background: white;
+	float: left;
+	margin-left:10px; 
+}
+.wj-container{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.wj-container .wj-company1{
+	width: 100%;
+	height: 168px;
+	padding:50px;
+	box-sizing: border-box;
+}
+.wj-container .wj-company1 img{
+	display:block;
+	width:146px;
+	height:75px;
+	margin: auto;
+}
+.wj-container .four{
+	width: 100%;
+	height:458px;
+}
+.wj-container .four li{
+	position: relative;
+	float: left;
+	margin-left:16px;
+	width:288px;
+	height: 100%;
+	background: red;
+	overflow: hidden;
+}
+.wj-container .four li:first-child{
+	margin-left:0px;
+}
+.wj-container .four li .wj-top{
+	width: 100%;
+	height: 313px;
+}
+.wj-container .four li .wj-top img{
+	width: 100%;
+	height: 100%;
+}
+.wj-container .four li .wj-bottom{
+	position: absolute;
+	left: 0px;
+	top: 313px;
+	width: 100%;
+	height: 252px;
+	background:#F4F4F4;
+	padding: 0px 30px 0px 30px;
+	box-sizing: border-box;
+}
+.wj-container .four li .wj-bottom p:nth-child(1){
+	color: #999;
+	font-size: 40px;
+	font-family: '微软雅黑';
+	width: 40px;
+	margin:auto;
+	margin-top:10px;
+}
+.wj-container .four li .wj-bottom p:nth-child(2){
+	color: #666;
+	font-size: 18px;
+	font-family: '微软雅黑';
+	width:90px;
+	margin:auto;
+	margin-top:5px;
+}
+.wj-container .four li .wj-bottom p:nth-child(3){
+	color: #666;
+	font-size: 14px;
+	font-family: '微软雅黑';
+	width:170px;
+	text-align: center;
+	margin: auto;
+	margin-top:5px;
+}
+.wj-container .four li .wj-bottom p:nth-child(4){
+	color: #333;
+	font-size:40px;
+	font-family: '微软雅黑';
+	width:170px;
+	text-align: center;
+	margin: auto;
+	margin-top:45px;
+}
+.wj-container .four li:hover .wj-bottom{
+	background: #FFF43C;
+	top:206px;
+	transition:0.3s;
+}
+.wj-container .four li:hover .wj-bottom p{
+	color: #333;
+}
+
+.wj-fenge{
+	width: 100%;
+	height: 202px;
+	margin: auto;
+}
+.wj-bkimg{
+	width: 100%;
+	height: 635px;
+	position: relative;
+}
+.wj-bkimg img{
+	width: 100%;
+}
+.wj-bkimg .wj-bannershow{
+	position: absolute;
+	top:347px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width:927px;
+	height:471px;
+}
+.wj-bkimg .wj-bannershow .wj-banner2{
+	width: 2781px;
+	height: 100%;
+}
+.wj-bkimg .wj-bannershow .wj-banner2 .wj-box{
+	width: 228px;
+	height: 100%;
+	background: green;
+	float: left;
+	margin-left:121.5px;
+	box-shadow:10px 10px 30px #666;
+}
+.wj-bkimg .wj-bannershow .wj-banner2 .wj-box:first-child{
+	margin-left:0px;
+}
+.wj-bkimg .wj-bannershow .wj-banner2 .wj-box:nth-child(4){
+	margin-left:0px;
+}
+.wj-bkimg .wj-bannershow .wj-banner2 .wj-box:nth-child(7){
+	margin-left:0px;
+}
+.wj-banner2 .wj-box .wj-top1{
+	padding: 56px 10px 0px 10px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 246px;
+	background: #FF3795;
+}
+.wj-banner2 .wj-box .wj-bottom1{
+	width: 100%;
+	height: 226px;
+	background:#fff;
+}
+.wj-banner2 .wj-box .wj-bottom1 img{
+	margin-top:65px;
+}
+.wj-page2{
+	width:56px;
+	height:8px;
+	margin: auto;
+	margin-top:200px;
+	background:yellow;
+}
+.wj-page2 li{
+	width:8px;
+	height:8px;
+	float: left;
+	margin-left: 8px;
+	border-radius: 50%;
+	background:green;
+}
+.wj-page2 li:first-child{
+	margin-left: 0px;
+}
+.wj-banner2 .wj-box .wj-top1 p:first-child{
+	color: #fff;
+	font-size:18px;
+	font-family: '微软雅黑';
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.wj-banner2 .wj-box .wj-top1 span{
+	display: block;
+	color: #fff;
+	font-size:12px;
+	font-family: '微软雅黑';
+	text-align: center;
+	margin-top:20px;
+	line-height:30px;
+}
+.wj-banner2 .wj-box .wj-top1 p:nth-child(3){
+	display: block;
+	margin-top:30px;
+	color: #fff;
+	font-size:12px;
+	font-family: '微软雅黑';
+	text-align:right;
+}

@@ -1,0 +1,200 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.swiper-container{
+	width: 100%;
+	height: 400px;
+}
+.swiper-container .swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+.swiper-pagination-bullet-active{
+	background: #fc1873;
+}
+.lh-container{
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.lh-copy{
+	color: #333;
+}
+.lh-copy span{
+	font-size: 22px;
+}
+.lh-example{
+	overflow: hidden;
+}
+.lh-example .lh-floor{
+	position: relative;
+	height: 180px;
+	margin-top: 30px;
+}
+.lh-example .lh-floor:nth-child(4){
+	margin-bottom: 30px;
+}
+.lh-example .lh-floor .lh-left{
+	width: 200px;
+	height: 120px;
+	color: #fff;
+	font-size: 76px;
+	background: #999;
+	float: left;
+	overflow: hidden;
+	transition: all 1s;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+.lh-example .lh-floor .lh-left .lh-word{
+	float: left;
+	width: 100px;
+	margin-left: 15px;
+}
+.lh-example .lh-floor .lh-left .lh-word .line{
+	width: 56px;
+	height: 8px;
+	margin-left: 12px;
+}
+.lh-example .lh-floor .lh-left .lh-word .line .line_left{
+	width: 40px;
+	height: 100%;
+	background: #fff;
+	float: left;
+	
+}
+.lh-example .lh-floor .lh-left .lh-word .line .line_right{
+	width: 8px;
+	height: 8px;
+	margin-left: 8px;
+	background: #fff;
+	float: left;
+}
+.lh-example .lh-floor .lh-left ul{
+	float: left;
+	margin-left: 10px;
+}
+.lh-example .lh-floor .lh-left ul li{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 3px 3px;
+}
+.lh-example .lh-floor .lh-middle{
+	width: 290px;
+	height: 180px;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	z-index: 999;
+	transition: all 1s;
+}
+.lh-example .lh-floor .lh-middle img{
+	width: 100%;
+	height: 100%;
+}
+.lh-example .lh-floor .lh-right{
+	width: 600px;
+	height: 118px;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	padding-left: 100px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+.lh-example .lh-floor .lh-right p:nth-child(1){
+	color: #333;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.lh-example .lh-floor .lh-right .con{
+	overflow: hidden;
+}
+.lh-example .lh-floor .lh-right .con p{
+	color: #666;
+	font-size: 18px;
+	float: left;
+	margin-top: 8px;
+}
+.lh-example .lh-floor .lh-right .con ul{
+	float: left;
+	margin-top: 17px;
+	margin-left: 4px;
+}
+.lh-example .lh-floor .lh-right .con ul li{
+	float: left;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+.lh-example .lh-floor .lh-right .con ul li:nth-child(1){
+	background: #fd3c84;
+}
+.lh-example .lh-floor .lh-right .con ul li:nth-child(2){
+	background: #fe68a0;
+}
+.lh-example .lh-floor .lh-right .con ul li:nth-child(3){
+	background: #ffb2cf;
+}
+.lh-example .lh-floor .lh-bottom{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.lh-example .lh-floor .lh-bottom .lh-dot{
+	float: left;
+	margin-right: 20px;
+}
+.lh-example .lh-floor .lh-bottom .lh-dot .dot{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #999;
+	float: left;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.lh-example .lh-floor .lh-bottom .lh-dot span{
+	font-size: 12px;
+	color: #999;
+}
+.lh-example .lh-floor .lh-right .lh-san{
+	 width: 0;
+    height: 0;
+    border-bottom: 16px solid #fc1873;
+    border-left: 16px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.lh-example .lh-floor .lh-right .lh-jiantou{
+	width: 40px;
+	height: 40px;
+	background: #fc1873;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	font-size: 12px;
+	top: 35px;
+	right: 50px;
+	opacity: 0;
+	transition: all 1s;
+}
+.lh-example .lh-floor:hover .lh-jiantou{
+	opacity: 1;
+}
+.lh-example .lh-floor:hover .lh-left{
+	left: -3px;
+	background: #fc1873;
+}
+.lh-example .lh-floor:hover .lh-middle{
+	width: 296px;
+	height: 184px;
+}
