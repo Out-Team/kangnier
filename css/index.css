@@ -6,46 +6,43 @@
 body,html{
 	width: 100%;
 }
-.wj-banner1{
-	width:100%;
-	height:450px;
-	background: green;
-	margin:0px auto;
-	position: relative;
+.banner{
+	position:relative;
+	overflow: auto;
+	text-align: center;
 }
-.wj-bigBanner{
-	position: absolute;
-	top: 0px;
-	left:0px;
-	width:300%;
-	height: 100%;
-	background: red;
+
+.banner li { list-style: none; }
+
+.banner ul li { float: left; }
+#b03{
+ width:100%;
+ position: relative;
+ margin: auto;
 }
-.wj-bigBanner li{
-	float: left;
-	width:33.333%;
-	height: 100%;
+#b03 .dots{ 
+	position: absolute; 
+	left: 0; 
+	right: 0;
+	bottom: 20px;
 }
-.wj-bigBanner li img{
-	width: 100%;
-	height:100%;
+#b03 .dots li{ 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	margin: 0 4px; 
+	text-indent: -999em; 
+	border: 2px solid #fff; 
+	border-radius: 6px; 
+	cursor: pointer; 
+	opacity: .4; 
+	-webkit-transition: background .5s, opacity .5s; 
+	-moz-transition: background .5s, opacity .5s; 
+	transition: background .5s, opacity .5s;
 }
-.wj-page{
-	position:absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 53px;
-	margin: 0px auto;
-	width:100px;
-	height: 8px;
-}
-.wj-page li{
-	width:8px;
-	height: 8px;
-	border-radius:10px;
-	background: white;
-	float: left;
-	margin-left:10px; 
+#b03 .dots li.active{
+	background: #fff;
+	opacity: 1;
 }
 .wj-container{
 	width: 1200px;
@@ -110,6 +107,9 @@ body,html{
 	color: #666;
 	font-size: 18px;
 	font-family: '微软雅黑';
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
 	width:90px;
 	margin:auto;
 	margin-top:5px;
@@ -122,6 +122,10 @@ body,html{
 	text-align: center;
 	margin: auto;
 	margin-top:5px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:2;
+	overflow: hidden;
 }
 .wj-container .four li .wj-bottom p:nth-child(4){
 	color: #333;
@@ -150,6 +154,7 @@ body,html{
 	width: 100%;
 	height: 635px;
 	position: relative;
+	margin-bottom: 400px;
 }
 .wj-bkimg img{
 	width: 100%;
@@ -164,12 +169,12 @@ body,html{
 	height:471px;
 }
 .wj-bkimg .wj-bannershow .wj-banner2{
-	width: 2781px;
+	width: 100%;
 	height: 100%;
 }
 .wj-bkimg .wj-bannershow .wj-banner2 .wj-box{
 	width: 228px;
-	height: 100%;
+	height:471px;
 	background: green;
 	float: left;
 	margin-left:121.5px;
@@ -212,7 +217,6 @@ body,html{
 	float: left;
 	margin-left: 8px;
 	border-radius: 50%;
-	background:green;
 }
 .wj-page2 li:first-child{
 	margin-left: 0px;
@@ -242,3 +246,88 @@ body,html{
 	font-family: '微软雅黑';
 	text-align:right;
 }
+
+.wj-partnerBox {
+	width: 100%;
+	/*overflow: hidden;*/
+	position: relative;
+	margin-top: 340px;
+	margin-bottom: 500px;
+}
+.wj-partnerBox .colorLeft {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #FF3795;
+	height: 444px;
+	width: 94.5%;
+}
+.wj-partnerBox .colorRight {
+	position: absolute;
+	bottom: 70px;
+	right: 0px;
+	height: 176px;
+	width: 355px;
+	background: #FF3795;
+}
+.wj-partnerBox .colorLeft img {
+	width: 571px;
+	height: 596px;
+	position: absolute;
+	top: -152px;
+	left: 100px;
+}
+.wj-partnerBox .wj-partner {
+	width: 1200px;
+	margin: auto;
+	height: 600px;
+	position: relative;
+	top: 155px
+}
+.wj-partnerBox .wj-partner .des {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.wj-partnerBox .wj-partner .des .imgl img{
+	width: 730px;
+	height: 490px;
+}
+.wj-partnerBox .wj-partner .des .imgr {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.wj-partnerBox .wj-partner .des .imgr img{
+	width: 470px;
+	height: 315px;
+}
+
+.wj-partnerBox .wj-partner .des .con {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 470px;
+	height: 281px;
+	padding: 0px 70px;
+	box-sizing: border-box;
+	background: white;
+}
+.wj-partnerBox .wj-partner .des .con div {
+	margin-top: 30px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #ff3795;
+}
+.wj-partnerBox .wj-partner .des .con h3 {
+	font-family: "微软雅黑";
+	font-size: 36px;
+	color: #ff3795;
+	margin-bottom: 20px;
+}
+.wj-partnerBox .wj-partner .des .con p {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+}
+
