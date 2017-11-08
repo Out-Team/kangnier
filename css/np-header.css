@@ -27,11 +27,12 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .np-head .np-nav .np-img a img{
 	width: 100%;
-	height: 56px;
+	height: 80px;
+	display: block;
 	
 }
 .np-head .np-nav .np-space{
@@ -72,41 +73,74 @@ footer{
 	height: 370px;
 	background:#ff3795;
 }
-footer ul{
+footer .np-last{
 	width: 1200px;
 	height: 250px;
 	margin: auto;
 }
-footer ul li{
+footer .np-last  .np-end{
 	width: 33.33%;
 	margin-top: 70px;
 	margin-bottom: 50px;
 	height: 100%;
 	float:left;
 	color: #fff;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
 	box-sizing: border-box;
 }
-footer ul li:first-child{
+footer .np-last  .np-end:first-child{
 	border-right:1px solid #ae1f63;
+	padding-left: 10px;
 }
-footer ul li h5{
+footer .np-last  .np-end h5{
 	font-size: 18px;
 	font-weight: 400;
 	margin-top: 10px;
 }
-footer ul li h6{
+footer .np-last  .np-end h5 .iconfont{
+	font-size: 20px;
+	margin-left: 10px;
+}
+footer .np-last  .np-end h6 .iconfont{
 	font-size: 18px;
+	margin-left: 10px;
+}
+footer .np-last  .np-end h6{
+	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 20px;
 	line-height: 30px;
 }
-footer ul li span{
+footer .np-last  .np-end ul li{
 	font-size: 14px;
-	display: block;
 	line-height: 30px;
 }
-footer ul li p{
-	font-size: 15px;	
+footer .np-last  .np-end ul li span{
+	display: block;
+	margin-left: 35px;
+}
+footer .np-last  .np-end ul li .iconfont{
+	font-size: 16px;
+	color: #555;
+	margin-right: 20px;
+}
+footer .np-last  .np-end ul li:last-child .iconfont{
+	font-size: 22px;
+	margin-left: -2px;
+	margin-right: 16px;
+}
+footer .np-last  .np-pro ul li{
+	float: left;
+	font-size: 16px;
+	width: 25%;
+}
+footer .np-last  .np-pro ul li a{
+	color: #fff;
+}
+footer .np-last  .np-end:last-child img{
+	width: 217px;
+	height: 211px;
+	margin-left: 50px;
+	margin-top: 30px;
 }
