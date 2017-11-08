@@ -6,38 +6,67 @@ $(function(){
 	wheel1.css("left","100%");
 	var gyBannerBtn = $('.bannerBtn');
 	var gyBannerDoc = $('.bannerBtn li');
-
+	// console.log(gyBannerDoc);
 
 	// 加盟轮播
 
 	var now=0;
 	var next=0;
-
-	function jionMove() {
-		next++
-		if(next>wheelLise.length-1){
-			next = 0;
+	var flag1 = true;
+	function jionMove(goto1='left') {
+		if(!flag1){
+			return;
 		}
-		$(wheelLise[now]).css("left","0");
-		$(wheelLise[next]).css("left","100%");
-
-		$(wheelLise[now]).animate({left:"-100%"},1000);
-		$(wheelLise[next]).animate({left:"0"},1000);
-
+		flag1=!flag1;
+		if(goto1=="left"){
+			next++;
+			if(next>wheelLise.length-1){
+				next=0;
+			}
+			$(wheelLise[now]).css("left","0");
+			$(wheelLise[next]).css("left","100%");
+			$(wheelLise[now]).animate({left:"-100%"},1000);
+			$(wheelLise[next]).animate({left:"0"},1000,function(){
+				flag1=true;
+			});
+		}
+		if(goto1=='right'){
+			next--;
+			if(next<0){
+				next=wheelLise.length-1;
+			}
+			$(wheelLise[now]).css("left","0");
+			$(wheelLise[next]).css("left","-100%");
+			$(wheelLise[now]).animate({left:"100%"},1000);
+			$(wheelLise[next]).animate({left:"0"},1000,function(){
+				flag1=true;
+			});
+		}
 		$(gyBannerDoc[next]).addClass('active');
 		$(gyBannerDoc[now]).removeClass('active');
 		now = next;
+		
 	}
 	var t1 = setInterval(function(){
 		jionMove();
 	},3000)
 
-
+	for(var j=0; j<gyBannerDoc.length-1; j++) {
+		gyBannerDoc.click(function(){
+			if(j>now) {
+				next = j-1;
+				jionMove('right');
+			}else if(j<now){
+				next = j+1;
+				jionMove('left');
+			}
+		})
+	}
 
 	// 企业轮播
 
-	var qiye = $('.wheel li');
-	var qiye1 = $('.wheel li').not($('.wheel li').eq(0));
+	var qiye = $('.wheelBox');
+	var qiye1 = $('.wheelBox').not($('.wheelBox').eq(0));
 	qiye1.css("left",'100%');
 
 	var btnBox = $(".slide");
@@ -79,8 +108,6 @@ $(function(){
 			$(qiye[next1]).animate({left:"0%"},1000,function(){
 				flag=true;
 			});	
-			
-
 		}
 		if(goto=='right'){
 			next1--;
@@ -97,12 +124,11 @@ $(function(){
 		$(doc[next1]).addClass('active');
 		$(doc[now1]).removeClass('active');
 		now1 = next1;
-
 	}
 
 	var t2 = setInterval(function(){
 		qiyeMove();
-	},3000)
+	},5000)
 
 
 	btnBox.hover(function(){
@@ -110,7 +136,7 @@ $(function(){
 	},function(){
 		t2 = setInterval(function(){
 			qiyeMove();
-		},3000)
+		},5000)
 	})
 
 	btnLeft.click(function(){
@@ -119,5 +145,19 @@ $(function(){
 	btnRight.click(function(){
 		qiyeMove(goto="right");
 	})
+
+	
+	for(var i=0; i<doc.length-1; i++) {
+		doc.click(function(){
+			if(i>now) {
+				next = i-1;
+				qiyeMove('right');
+			}else if(i<now){
+				next = i+1;
+				qiyeMove('left');
+
+			}
+		})
+	}
 
 })
