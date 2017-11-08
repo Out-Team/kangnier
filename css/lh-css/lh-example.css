@@ -3,28 +3,112 @@
 	padding: 0;
 	list-style: none;
 }
-.swiper-container{
+.lh-banner{
 	width: 100%;
-	height: 400px;
+	height: 450px;
+	position: relative;
+
+
 }
-.swiper-container .swiper-slide img{
+.lh-banner .lh-imgBox{
 	width: 100%;
 	height: 100%;
+	position: relative;
+	overflow: hidden;
 }
-.swiper-pagination-bullet-active{
-	background: #fc1873;
+.lh-banner .lh-imgBox a{
+	display: block;
 }
+.lh-banner .lh-imgBox img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lh-banner .dot{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 20px;
+	overflow: hidden;
+}
+.lh-banner .dot li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0px 5px;
+	background: #fff;
+	float: left;
+}
+
 .lh-container{
 	width: 1000px;
 	margin: auto;
 	overflow: hidden;
 	margin-top: 30px;
 }
+.lh-container .lh-brand{
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+.lh-container .lh-brand .first {
+	color: #666;
+	font-size: 16px;
+	float: left;
+}
+
+.lh-container .lh-brand .first .lines{
+	width: 50px;
+	height: 3px;
+	overflow: hidden;
+}
+.lh-container .lh-brand .first .lines .line_left{
+	width: 36px;
+	height: 3px;
+	background: #666;
+	float: left;
+}
+.lh-container .lh-brand .first .lines .line_right{
+	width: 8px;
+	height: 3px;
+	background: #666;
+	float: right;
+}
+.lh-container .lh-brand .second{
+	float: left;
+	color: #333;
+	margin-left: 3px;
+	font-size: 18px;
+}
 .lh-copy{
 	color: #333;
 }
 .lh-copy span{
 	font-size: 22px;
+}
+.lh-xu{
+	width: 100px;
+	height: 1px;
+	border-bottom: 1px dashed #666;
+	margin: 3px 0;
+}
+.lh-xus{
+	overflow: hidden;
+}
+.lh-xus .xu_left{
+	width: 20px;
+	height: 2px;
+	background: #000;
+	float: left;
+}
+.lh-xus .xu_right{
+	width: 150px;
+	height: 1px;
+	border-bottom: 1px dashed #666;
 }
 .lh-example{
 	overflow: hidden;
@@ -112,6 +196,9 @@
 	color: #333;
 	font-size: 20px;
 	margin-top: 10px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .lh-example .lh-floor .lh-right .con{
 	overflow: hidden;
@@ -121,6 +208,9 @@
 	font-size: 18px;
 	float: left;
 	margin-top: 8px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .lh-example .lh-floor .lh-right .con ul{
 	float: left;
@@ -184,6 +274,7 @@
 	font-size: 12px;
 	top: 35px;
 	right: 50px;
+	font-size: 15px;
 	opacity: 0;
 	transition: all 1s;
 }
@@ -197,4 +288,15 @@
 .lh-example .lh-floor:hover .lh-middle{
 	width: 296px;
 	height: 184px;
+}
+.lh-fenye{
+	width: 80px;
+	height: 30px;
+	background: #666;
+	margin: 30px auto;
+	color: #000;
+	border-radius: 10px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
 }

@@ -8,20 +8,66 @@
 	<meta name="Keywords" content="新闻">
 	<meta name="Description" content="新闻">
 	<title>案例</title>
-	<link rel="stylesheet" href="css/lh-css/swiper.css">
 	<link rel="stylesheet" href="css/lh-css/lh-example.css">
-	<link rel="stylesheet" type="text/css" href="css/np-header.css"/>
+	<link rel="stylesheet" href="iconfont/lh-icon/lh-font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/np-font/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/np-font/icon/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/np-header.css"/>	
 	<script src="js/lh-js/jquery-3.2.1.min.js"></script>
-	<script src="js/lh-js/swiper.jquery.js"></script>
+	<script src="js/unslider.min.js"></script
 	
+
 </head>
+<style>
+
+.banner{
+	position:relative;
+	overflow: auto;
+	text-align: center;
+}
+
+.banner li { list-style: none; }
+
+.banner ul li { float: left; }
+#b03{
+ width:100%;
+ position: relative;
+ margin: auto;
+}
+#b03 .dots{ 
+	position: absolute; 
+	left: 0; 
+	right: 0;
+	bottom: 20px;
+}
+#b03 .dots li{ 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	margin: 0 4px; 
+	text-indent: -999em; 
+	border: 2px solid #fff; 
+	border-radius: 6px; 
+	cursor: pointer; 
+	opacity: .4; 
+	-webkit-transition: background .5s, opacity .5s; 
+	-moz-transition: background .5s, opacity .5s; 
+	transition: background .5s, opacity .5s;
+}
+#b03 .dots li.active{
+	background: #fff;
+	opacity: 1;
+}
+
+
+</style>
 <body>
 	<!--导航-->
 		<div class="np-head">
 			<div class="np-nav">
 				<div class="np-img">
 					<a href="#">
-						<img src="img/np/np-log.png" alt="加载失败">
+						<img src="img/np/np-log.jpg" alt="加载失败">
 					</a>
 				</div>
 				<ul  class="np-space">
@@ -56,20 +102,49 @@
 			</div>
 		</div>
 	<!--导航结束-->
+	<div class="banner" id="b03" >
 
-	<div class="swiper-container">
-	  <div class="swiper-wrapper">
-	    <div class="swiper-slide"><img src="img/lh-img/banner-1.jpg" alt=""></div>
-	    <div class="swiper-slide"><img src="img/lh-img/banner-2.jpg" alt=""></div>
-	    <div class="swiper-slide"><img src="img/lh-img/banner-3.jpg" alt=""></div>
-	  </div>
-	    <div class="swiper-pagination"></div>
-	</div>
+    <ul>
+
+        <li><img src="img/lh-img/banner-1.jpg" alt="" width="100%" height="450" ></li>
+
+        <li><img src="img/lh-img/banner-2.jpg" alt="" width="100%" height="450" ></li>
+
+        <li><img src="img/lh-img/banner-3.jpg" alt="" width="100%" height="450" ></li>
+
+    
+
+    </ul>
+
+</div>
 	<div class="lh-container">
+		<div class="lh-brand">
+			<div class="first">
+				<span>HOME</span>
+				<div class="lines">
+					<div class="line_left"></div>
+					<div class="line_right"></div>
+				</div>
+			</div>
+			<div class="second">
+				首页&nbsp;&nbsp;>&nbsp;
+			</div>
+			<div class="first">
+				<span>ABOUT</span>
+				<div class="lines">
+					<div class="line_left"></div>
+					<div class="line_right"></div>
+				</div>
+			</div>
+			<div class="second" style="color: #000">
+				咨询中心
+			</div>
+		</div>
 		<div class="lh-title">
 			<strong>COMPANY</strong>
 			<span>PROFILE</span>
 		</div>
+		<div class="lh-xu"></div>
 		<div class="lh-copy">
 			<span>高</span> | 
 			<span>效</span> | 
@@ -77,6 +152,10 @@
 			<span>队</span> | 
 			<span>复</span> | 
 			<span>制</span> | 
+		</div>
+		<div class="lh-xus">
+			<div class="xu_left"></div>
+			<div class="xu_right"></div>
 		</div>
 		<div class="lh-example">
 			<div class="lh-floor">
@@ -133,7 +212,7 @@
 					</div>
 					<div class="lh-san"></div>
 					<div class="lh-jiantou">
-						<span>—></span>
+						<i class="iconfont icon-arrowright"></i>
 					</div>
 				</div>
 			</div>
@@ -191,7 +270,7 @@
 					</div>
 					<div class="lh-san"></div>
 					<div class="lh-jiantou">
-						<span>—></span>
+						<i class="iconfont icon-arrowright"></i>
 					</div>
 				</div>
 			</div>
@@ -249,7 +328,7 @@
 					</div>
 					<div class="lh-san"></div>
 					<div class="lh-jiantou">
-						<span>—></span>
+						<i class="iconfont icon-arrowright"></i>
 					</div>
 				</div>
 			</div>
@@ -307,37 +386,63 @@
 					</div>
 					<div class="lh-san"></div>
 					<div class="lh-jiantou">
-						<span>—></span>
+						<i class="iconfont icon-arrowright"></i>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="lh-fenye">
+			1/1
+		</div>
 	</div>
 	<footer>
-		<ul>
-			<li>
-				<h5>CONTACT US</h5>
+		<div class="np-last">
+			<div class="np-end">
+				<h5>CONTACT US<i class="iconfont">&#xe659;</i></h5>
 				<h6>联系我们</h6>
-				<span>山西太原长风大街长风画卷A座2 单元三层。 3 xueyuan road, taiyuan city, Shanxi Province</span>			<span>太原管理中心：0315-7552788  QQ:2894246186</span>
-				<span>lxy@nuc.edu.cn</span>	
-				<span>京ICP备12046704号</span>	
-			</li>
-			<li>
-				<h5>Fast track</h5>
+				<ul>
+					<li><i class="iconfont">&#xe664;</i>山西太原长风大街长风画卷A座2 单元三层。 <span>3 xueyuan road, taiyuan city, Shanxi Province</span>
+					<li><i class="iconfont">&#xe6be;</i>太原管理中心：0315-7552788  QQ:2894246186</li>
+					</li>
+					<li><i class="iconfont">&#xe61f;</i>lxy@nuc.edu.cn</li>	
+					<li><i class="iconfont">&#xe625;</i>京ICP备12046704号</li>	
+				</ul>
+			</div>
+			<div class="np-end np-pro">
+				<h5>Fast track<i class="iconfont">&#xe64a;</i></h5>
 				<h6>快速通道</h6>
-				
-				<p>最新动态&nbsp;&nbsp;&nbsp;加盟指南&nbsp;&nbsp;&nbsp;减肥百科&nbsp;&nbsp;&nbsp;康伲尔百科 </p>
-			</li>
-			<li>
-				<img src="img/np/np-erweima.png"alt="加载失败"/>
-			</li>
-		</ul>
+				<ul>
+					<li>
+						<a href="#">最新动态</a>
+					</li>
+					<li>
+						<a href="#">加盟指南</a>
+					</li>
+					<li>
+						<a href="#">减肥百科</a>
+					</li>
+					<li>
+						<a href="#">康伲尔百科 </a>
+					</li>
+				</ul>
+			</div>
+			<div class="np-end">
+				<img src="img/np/np-wei_06.jpg" alt="加载失败"/>
+			</div>
+		</div>
 	</footer>
 </body>
-<script> 
-var mySwiper = new Swiper('.swiper-container', {
-	autoplay: 5000,//可选选项，自动滑动
-	pagination : '.swiper-pagination',
-})
+<script>
+
+$(document).ready(function(e) {
+
+    $('#b03').unslider({
+
+		dots: true
+
+	});
+
+});
+
 </script>
 </html>
