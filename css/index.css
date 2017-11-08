@@ -1,17 +1,16 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 body,html{
 	width: 100%;
 }
+a{
+	color: #000;
+}
+/*banner start*/
 .banner{
 	position:relative;
 	overflow: auto;
 	text-align: center;
+	height: 638px !important;
 }
-
 .banner li { list-style: none; }
 
 .banner ul li { float: left; }
@@ -43,27 +42,30 @@ body,html{
 #b03 .dots li.active{
 	background: #fff;
 	opacity: 1;
+	width:30px;
 }
+/*banner  end*/
+
+/*内宽*/
 .wj-container{
 	width: 1200px;
 	height: auto;
 	margin: 0 auto;
 }
+
+/*企业简介 */
 .wj-container .wj-company1{
 	width: 100%;
 	height: 168px;
 	padding:50px;
 	box-sizing: border-box;
 }
-.wj-container .wj-company1 img{
-	display:block;
-	width:146px;
-	height:75px;
-	margin: auto;
-}
+/*企业简介 */
+
+/*介绍 开始*/
 .wj-container .four{
 	width: 100%;
-	height:458px;
+	height:457px;
 }
 .wj-container .four li{
 	position: relative;
@@ -71,7 +73,6 @@ body,html{
 	margin-left:16px;
 	width:288px;
 	height: 100%;
-	background: red;
 	overflow: hidden;
 }
 .wj-container .four li:first-child{
@@ -79,7 +80,7 @@ body,html{
 }
 .wj-container .four li .wj-top{
 	width: 100%;
-	height: 313px;
+	height: 312px;
 }
 .wj-container .four li .wj-top img{
 	width: 100%;
@@ -88,7 +89,7 @@ body,html{
 .wj-container .four li .wj-bottom{
 	position: absolute;
 	left: 0px;
-	top: 313px;
+	top: 312px;
 	width: 100%;
 	height: 252px;
 	background:#F4F4F4;
@@ -101,7 +102,7 @@ body,html{
 	font-family: '微软雅黑';
 	width: 40px;
 	margin:auto;
-	margin-top:10px;
+	margin-top: 3px;
 }
 .wj-container .four li .wj-bottom p:nth-child(2){
 	color: #666;
@@ -112,7 +113,7 @@ body,html{
 	white-space: nowrap;
 	width:90px;
 	margin:auto;
-	margin-top:5px;
+	margin-top:7px;
 }
 .wj-container .four li .wj-bottom p:nth-child(3){
 	color: #666;
@@ -121,7 +122,7 @@ body,html{
 	width:170px;
 	text-align: center;
 	margin: auto;
-	margin-top:5px;
+	margin-top:8px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp:2;
@@ -129,27 +130,55 @@ body,html{
 }
 .wj-container .four li .wj-bottom p:nth-child(4){
 	color: #333;
-	font-size:40px;
+	font-size:46px;
 	font-family: '微软雅黑';
 	width:170px;
 	text-align: center;
 	margin: auto;
-	margin-top:45px;
+	margin-top:23px;
 }
+/*移入效果*/
 .wj-container .four li:hover .wj-bottom{
 	background: #FFF43C;
-	top:206px;
+	top:204px;
 	transition:0.3s;
 }
 .wj-container .four li:hover .wj-bottom p{
 	color: #333;
 }
+/*介绍  结束*/
 
+/*swiper 开始*/
+.swiper-pagination-bullet{
+	width: 8px !important;
+	height: 8px !important;
+	border-radius:50% !important;
+	background: #FFDC36 !important;
+	opacity:1 !important;
+}
+.swiper-pagination-bullet-active{
+	width: 24px !important;
+	background: #FF3795 !important;
+	border-radius:5px !important;
+}
+.swiper-pagination-bullets{
+	bottom:1px !important;
+}
+.swiper-slide{
+	width: 947px;
+	height: 600px;
+}
+/*swiper 结束*/
+
+/*间隔*/
 .wj-fenge{
 	width: 100%;
 	height: 202px;
 	margin: auto;
 }
+/*间隔*/
+
+/*图片 + 轮播*/
 .wj-bkimg{
 	width: 100%;
 	height: 635px;
@@ -158,18 +187,25 @@ body,html{
 }
 .wj-bkimg img{
 	width: 100%;
+	height: 63px;
+}
+.wj-bkimg .img1{
+	width: 100%;
+	height:623px;
 }
 .wj-bkimg .wj-bannershow{
 	position: absolute;
-	top:347px;
+	top:387px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
-	width:927px;
-	height:471px;
+	box-sizing: border-box;
+	height:600px;
+	width:967px;
 }
 .wj-bkimg .wj-bannershow .wj-banner2{
-	width: 100%;
+	width:967px !important;
+	padding:0px 20px 0px 20px;
 	height: 100%;
 }
 .wj-bkimg .wj-bannershow .wj-banner2 .wj-box{
@@ -178,7 +214,7 @@ body,html{
 	background: green;
 	float: left;
 	margin-left:121.5px;
-	box-shadow:10px 10px 30px #666;
+	box-shadow:10px 10px 20px 0px #999;
 }
 .wj-bkimg .wj-bannershow .wj-banner2 .wj-box:first-child{
 	margin-left:0px;
@@ -211,16 +247,25 @@ body,html{
 	margin-top:200px;
 	background:yellow;
 }
-.wj-page2 li{
-	width:8px;
-	height:8px;
-	float: left;
-	margin-left: 8px;
-	border-radius: 50%;
+
+/*点击查看*/
+.wj-box a p{
+	width: 100px;
+	height:34px;
+	background:#FDDA36;
+	text-align: center;
+	line-height: 34px;
+	font-family: "微软雅黑" ;
+	font-size: 16px;
+	color: #fff;
+	border-radius:0px 0px 10px 10px;
+	margin-left: 25px;
+	z-index:-1;
+	position: relative;
 }
-.wj-page2 li:first-child{
-	margin-left: 0px;
-}
+/*点击查看*/
+
+
 .wj-banner2 .wj-box .wj-top1 p:first-child{
 	color: #fff;
 	font-size:18px;
@@ -249,10 +294,10 @@ body,html{
 
 .wj-partnerBox {
 	width: 100%;
-	/*overflow: hidden;*/
 	position: relative;
-	margin-top: 340px;
-	margin-bottom: 500px;
+	margin-top: 600px;
+	margin-bottom: 370px;
+
 }
 .wj-partnerBox .colorLeft {
 	position: absolute;

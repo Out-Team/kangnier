@@ -1,8 +1,3 @@
-* {
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
-}
 a {
 	color: black;
 }
@@ -20,7 +15,7 @@ a {
 	position: relative;
 }
 
-
+/* 了解更多按钮*/
 .gy-container .more {
 	width: 151px;
 	height: 38px;
@@ -35,88 +30,18 @@ a {
 	font-family: "微软雅黑";
 	position: relative;
 }
+/* 了解更多按钮*/
+
 .gy-container {
 	width: 1200px;
 	margin: auto;
-	margin-top: 180px;
+	margin-top: 10px;
 }
 
 
-/* 标题 样式开始*/
-.gy-container .jionTitle {
-	width: 180px;
-	height: 75px;
-	margin: 0px auto;
-	margin-bottom: 56px;
-	position: relative;
-}
-.gy-container .jionTitle p{
-	font-weight: bold;
-	font-family: "微软雅黑";
-	color: #333;
-}
-.gy-container .jionTitle span {
-	color: #999;
-	font-family: "微软雅黑";
-	font-weight: normal;
-}
-.gy-container .jionTitle .topLine {
-	position: absolute;
-	top: 28px;
-	width: 120px;
-	border-bottom: 1px dashed #CBCBCB;
-}
-.gy-container .jionTitle .topDoc {
-	width: 5px;
-	height: 5px;
-	position: absolute;
-	top: 26px;
-	left: 115px;
-	background: #CBCBCB;
- 	border-radius: 50%;
- 	behavior: url(border-radius.htc);
-}
-.gy-container .jionTitle .con {
-	line-height: 60px;
-	width: 100%;
-	font-size: 22px;
-	color: #333;
-	word-spacing: 6px;
-}
-.gy-container .jionTitle .con span{
-	display: inline-block;
-	font-size: 14px;
-	box-sizing:border-box;
-	vertical-align: middle;
-}
-.gy-container .jionTitle .botLine {
-	position: absolute;
-	top: 75px;
-	width: 150px;
-	border-bottom: 1px dashed #333;
-}
-.gy-container .jionTitle .botDoc {
-	width: 5px;
-	height: 5px;
-	position: absolute;
-	top: 73px;
-	left: 152px;
-	background: #333;
- 	border-radius: 50%;
- 	behavior: url(border-radius.htc);
-}
-.gy-container .jionTitle .botblk {
-	width: 16px;
-	height: 4px;
-	position: absolute;
-	bottom: -2px;
-	left: 0px;
-	background: #333;
-}
-
-/* 标题 样式结束*/
 
 
+/* 加盟案例 开始 */
 .gy-container .jionBanner {
 	width: 100%;
 	height: 660px;
@@ -218,7 +143,8 @@ a {
 	height: 10px;
 	background: #FF3795;
 }
-
+/*  加盟案例 结束*/
+/* 企业环境 开始 */
 .gy-container .gy-inviro {
 	width: 1200px;
 	overflow: hidden;
@@ -308,6 +234,140 @@ a {
 	font-family: "微软雅黑";
 	position: relative;
 }
+
+
+
+.gy-container .gy-inviro .wheel {
+	float: right;
+	width: 596px;
+	height: 396px;
+	position: relative;
+	overflow: hidden;
+}
+.gy-container .gy-inviro .wheel div {
+	width: 596px;
+	height: 396px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.gy-container .gy-inviro .wheel img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.gy-container .inviro .btn {
+	position: absolute;
+	right: 177px;
+	bottom: 40px;
+	/*width: 56px;*/
+	height: 8px;
+
+}
+.gy-container .inviro .btn li {
+	width: 8px;
+	height: 8px;
+	float: left;
+	background: #C7C7C7;
+	margin-right: 5px;
+	border: 1px solid #C7C7C7;
+	box-sizing: border-box;
+
+}
+.gy-container .inviro .btn .active {
+	background: white;
+}
+.gy-container .inviro .btn .box-radius {
+  border-radius: 15px;
+  behavior: url(border-radius.htc);
+}
+
+.gy-container .inviro .gy-inviro .slide {
+	position: absolute;
+	right: 85px;
+	bottom: 30px;
+	width: 56px;
+	height: 28px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	line-height: 28px;
+}
+.gy-container .inviro .gy-inviro .slide .slideLeft {
+	width: 50%;
+	float: left;
+	background: rgb(67,67,67);
+	border-right: 1px solid white;
+}
+.gy-container .inviro .gy-inviro .slide .slideRight {
+	width: 50%;
+	float: right;
+	background: rgb(67,67,67);
+}
+/* 企业环境 结束 */
+/* 资讯中心 开始*/
+.gy-container .consult {
+	margin-top: 244px;
+	width: 1200px;
+	margin-bottom: 173px;
+}
+.gy-container .consult .title {
+	width: 146px;
+	height: 60px;
+	margin: 0px auto;
+	margin-bottom: 50px;
+	margin-bottom: 70px;
+}
+.gy-container .consult .title img  {
+	width: 100%;
+	height: 100%;
+}
+.gy-container .consult .gy-consult {
+	width: 1200px;
+	overflow: hidden;
+}
+.gy-container .consult .gy-consult li {
+	width: 330px;
+	float: left;
+	margin-right: 100px;
+	position: relative;
+}
+.gy-container .consult .gy-consult li img {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #D2D2D2;
+}
+.gy-container .consult .gy-consult li:last-child {
+	margin-right: 0px;	
+}
+.gy-container .consult .gy-consult li span {
+	display: block;
+	width: 268px;
+	height: 8px;
+	margin: auto;
+	background: rgb(255,244,60);
+	margin-top: -5px;
+}
+.gy-container .consult .gy-consult li .tit {
+	position: absolute;
+	bottom: 128px;
+	left: 12px;
+	color: #ff3795;
+	font-size: 32px;
+	font-family: "微软雅黑";
+}
+.gy-container .consult .gy-consult li .des {
+	position: absolute;
+	bottom: 92px;
+	left: 12px;
+	color: #ff3795;
+	font-size: 22px;
+	font-family: "微软雅黑";
+}
+/* 资讯中心 结束*/
+
+/* 虚线框 开始*/
 .more .line {
 	position: absolute;
 	top: -5px;
@@ -388,134 +448,78 @@ a {
 	border: 1px solid #999;
 	margin: auto;
 }
+/* 虚线框 结束*/
 
-
-
-.gy-container .gy-inviro .wheel {
-	float: right;
-	width: 596px;
-	height: 396px;
-	position: relative;
-	overflow: hidden;
-}
-.gy-container .gy-inviro .wheel div {
-	width: 596px;
-	height: 396px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.gy-container .gy-inviro .wheel img {
-	width: 100%;
-	height: 100%;
-
-}
-
-.gy-container .inviro .btn {
-	position: absolute;
-	right: 177px;
-	bottom: 40px;
-	/*width: 56px;*/
-	height: 8px;
-
-}
-.gy-container .inviro .btn li {
-	width: 8px;
-	height: 8px;
-	float: left;
-	background: #C7C7C7;
-	margin-right: 5px;
-	border: 1px solid #C7C7C7;
-	box-sizing: border-box;
-
-}
-.gy-container .inviro .btn .active {
-	background: white;
-}
-.gy-container .inviro .btn .box-radius {
-  border-radius: 15px;
-  behavior: url(border-radius.htc);
-}
-
-.gy-container .inviro .gy-inviro .slide {
-	position: absolute;
-	right: 85px;
-	bottom: 30px;
-	width: 56px;
-	height: 28px;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	line-height: 28px;
-}
-.gy-container .inviro .gy-inviro .slide .slideLeft {
-	width: 50%;
-	float: left;
-	background: rgb(67,67,67);
-	border-right: 1px solid white;
-}
-.gy-container .inviro .gy-inviro .slide .slideRight {
-	width: 50%;
-	float: right;
-	background: rgb(67,67,67);
-}
-
-
-.gy-container .consult {
-	margin-top: 244px;
-	width: 1200px;
-	margin-bottom: 173px;
-}
-.gy-container .consult .title {
-	width: 146px;
-	height: 60px;
+/* 标题 样式开始*/
+.jionTitle {
+	width: 180px;
+	height: 75px;
 	margin: 0px auto;
-	margin-bottom: 50px;
-	margin-bottom: 70px;
-}
-.gy-container .consult .title img  {
-	width: 100%;
-	height: 100%;
-}
-.gy-container .consult .gy-consult {
-	width: 1200px;
-	overflow: hidden;
-}
-.gy-container .consult .gy-consult li {
-	width: 330px;
-	float: left;
-	margin-right: 100px;
+	margin-bottom: 56px;
 	position: relative;
 }
-.gy-container .consult .gy-consult li img {
+.jionTitle p{
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #333;
+}
+.jionTitle span {
+	color: #999;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.jionTitle .topLine {
+	position: absolute;
+	top: 28px;
+	width: 120px;
+	border-bottom: 1px dashed #CBCBCB;
+}
+.jionTitle .topDoc {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 26px;
+	left: 115px;
+	background: #CBCBCB;
+ 	border-radius: 50%;
+ 	behavior: url(border-radius.htc);
+}
+.jionTitle .con {
+	line-height: 60px;
 	width: 100%;
-	height: 100%;
-	border: 1px solid #D2D2D2;
-}
-.gy-container .consult .gy-consult li:last-child {
-	margin-right: 0px;	
-}
-.gy-container .consult .gy-consult li span {
-	display: block;
-	width: 268px;
-	height: 8px;
-	margin: auto;
-	background: rgb(255,244,60);
-	margin-top: -5px;
-}
-.gy-container .consult .gy-consult li .tit {
-	position: absolute;
-	bottom: 128px;
-	left: 12px;
-	color: #ff3795;
-	font-size: 32px;
-	font-family: "微软雅黑";
-}
-.gy-container .consult .gy-consult li .des {
-	position: absolute;
-	bottom: 92px;
-	left: 12px;
-	color: #ff3795;
 	font-size: 22px;
-	font-family: "微软雅黑";
+	color: #333;
+	word-spacing: 6px;
 }
+.jionTitle .con span{
+	display: inline-block;
+	font-size: 14px;
+	box-sizing:border-box;
+	vertical-align: middle;
+}
+.jionTitle .botLine {
+	position: absolute;
+	top: 75px;
+	width: 150px;
+	border-bottom: 1px dashed #333;
+}
+.jionTitle .botDoc {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 73px;
+	left: 152px;
+	background: #333;
+ 	border-radius: 50%;
+ 	behavior: url(border-radius.htc);
+}
+.jionTitle .botblk {
+	width: 16px;
+	height: 4px;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	background: #333;
+}
+
+/* 标题 样式结束*/
