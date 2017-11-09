@@ -12,55 +12,12 @@
 	<link rel="stylesheet" href="iconfont/lh-icon/lh-font/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="iconfont/np-font/iconfont.css"/>
 	<link rel="stylesheet" type="text/css" href="iconfont/np-font/icon/iconfont.css"/>
-	<link rel="stylesheet" type="text/css" href="css/np-header.css"/>	
+	<link rel="stylesheet" type="text/css" href="css/np-header.css"/>
+	<link rel="stylesheet" href="css/base.css">	
 	<script src="js/lh-js/jquery-3.2.1.min.js"></script>
-	<script src="js/unslider.min.js"></script
-	
-
+	<script src="js/unslider.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
 </head>
-<style>
-
-.banner{
-	position:relative;
-	overflow: auto;
-	text-align: center;
-}
-
-.banner li { list-style: none; }
-
-.banner ul li { float: left; }
-#b03{
- width:100%;
- position: relative;
- margin: auto;
-}
-#b03 .dots{ 
-	position: absolute; 
-	left: 0; 
-	right: 0;
-	bottom: 20px;
-}
-#b03 .dots li{ 
-	display: inline-block; 
-	width: 10px; 
-	height: 10px; 
-	margin: 0 4px; 
-	text-indent: -999em; 
-	border: 2px solid #fff; 
-	border-radius: 6px; 
-	cursor: pointer; 
-	opacity: .4; 
-	-webkit-transition: background .5s, opacity .5s; 
-	-moz-transition: background .5s, opacity .5s; 
-	transition: background .5s, opacity .5s;
-}
-#b03 .dots li.active{
-	background: #fff;
-	opacity: 1;
-}
-
-
-</style>
 <body>
 	<!--导航-->
 		<div class="np-head">
@@ -72,7 +29,7 @@
 				</div>
 				<ul  class="np-space">
 					<li>
-						<a href="#">首&nbsp;页</a>
+						<a href="#">首页</a>
 					</li>
 					<li>
 						<a href="#">品牌介绍</a>
@@ -99,25 +56,28 @@
 						<a href="#">联系我们</a>
 					</li>
 				</ul>
+				<div class="line">
+					<div class="cre"></div>
+				</div>
 			</div>
 		</div>
 	<!--导航结束-->
-	<div class="banner" id="b03" >
+	<!-- 轮播图开始 -->
+	<div class="banner" id="b03">
+	    <ul>
+	        <li><img src="img/lh-img/banner-1.jpg" alt="" width="100%" height="454" ></li>
 
-    <ul>
+	        <li><img src="img/lh-img/banner-2.jpg" alt="" width="100%" height="454" ></li>
 
-        <li><img src="img/lh-img/banner-1.jpg" alt="" width="100%" height="450" ></li>
+	        <li><img src="img/lh-img/banner-3.jpg" alt="" width="100%" height="454" ></li>
 
-        <li><img src="img/lh-img/banner-2.jpg" alt="" width="100%" height="450" ></li>
-
-        <li><img src="img/lh-img/banner-3.jpg" alt="" width="100%" height="450" ></li>
-
-    
-
-    </ul>
-
-</div>
+	    </ul>
+	<!-- 轮播图结束 -->
+	</div>
+	<div class="black"></div>
+	<!-- main -->
 	<div class="lh-container">
+	<!-- 面包屑导航 -->
 		<div class="lh-brand">
 			<div class="first">
 				<span>HOME</span>
@@ -140,24 +100,27 @@
 				咨询中心
 			</div>
 		</div>
-		<div class="lh-title">
-			<strong>COMPANY</strong>
-			<span>PROFILE</span>
+		<!-- 面包屑导航结束 -->
+		<!-- 标题 -->
+		<div class="jionTitle">
+			<p>COMPANY <span>PROFILE</span></p>
+			<div class="topLine"></div>
+			<div class="topDoc"></div>
+			<div class="con"> 高
+				<span>|</span> 效
+				<span>|</span> 团
+				<span>|</span> 队
+				<span>|</span> 复
+				<span>|</span> 制
+			</div>
+			<div class="botLine"></div>
+			<div class="botDoc"></div>
+			<div class="botblk"></div>
 		</div>
-		<div class="lh-xu"></div>
-		<div class="lh-copy">
-			<span>高</span> | 
-			<span>效</span> | 
-			<span>团</span> | 
-			<span>队</span> | 
-			<span>复</span> | 
-			<span>制</span> | 
-		</div>
-		<div class="lh-xus">
-			<div class="xu_left"></div>
-			<div class="xu_right"></div>
-		</div>
+		<!-- 标题结束 -->
+		<!-- 列表开始 -->
 		<div class="lh-example">
+			<!-- 列表1 -->
 			<div class="lh-floor">
 				<div class="lh-left">
 					<div class="lh-word">
@@ -216,6 +179,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 列表2 -->
 			<div class="lh-floor">
 				<div class="lh-left">
 					<div class="lh-word">
@@ -274,6 +238,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 列表3 -->
 			<div class="lh-floor">
 				<div class="lh-left">
 					<div class="lh-word">
@@ -332,6 +297,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 列表4 -->
 			<div class="lh-floor">
 				<div class="lh-left">
 					<div class="lh-word">
@@ -391,25 +357,30 @@
 				</div>
 			</div>
 		</div>
+		<!-- 列表结束 -->
+
+		<!-- 分页导航 -->
 		<div class="lh-fenye">
 			1/1
 		</div>
+		<div class="jianbian"></div>
 	</div>
+	<!-- 底部开始 -->
 	<footer>
 		<div class="np-last">
 			<div class="np-end">
-				<h5>CONTACT US<i class="iconfont">&#xe659;</i></h5>
+				<h5>CONTACT <span>US</span><i class="iconfont">&#xe659;</i></h5>
 				<h6>联系我们</h6>
 				<ul>
 					<li><i class="iconfont">&#xe664;</i>山西太原长风大街长风画卷A座2 单元三层。 <span>3 xueyuan road, taiyuan city, Shanxi Province</span>
 					<li><i class="iconfont">&#xe6be;</i>太原管理中心：0315-7552788  QQ:2894246186</li>
 					</li>
-					<li><i class="iconfont">&#xe61f;</i>lxy@nuc.edu.cn</li>	
-					<li><i class="iconfont">&#xe625;</i>京ICP备12046704号</li>	
+					<li><i class="iconfont">&#xe6e8;</i>lxy@nuc.edu.cn</li>	
+					<li><i class="iconfont">&#xe63d;</i>京ICP备12046704号</li>	
 				</ul>
 			</div>
 			<div class="np-end np-pro">
-				<h5>Fast track<i class="iconfont">&#xe64a;</i></h5>
+				<h5>Fast <span>track</span><i class="iconfont">&#xe64a;</i></h5>
 				<h6>快速通道</h6>
 				<ul>
 					<li>
@@ -426,11 +397,12 @@
 					</li>
 				</ul>
 			</div>
-			<div class="np-end">
+			<div class="np-image">
 				<img src="img/np/np-wei_06.jpg" alt="加载失败"/>
 			</div>
 		</div>
 	</footer>
+	<!-- 底部结束 -->
 </body>
 <script>
 

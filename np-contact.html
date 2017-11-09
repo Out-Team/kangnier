@@ -8,10 +8,14 @@
 		<meta name="Keywords" content="新闻">
 		<meta name="Description" content="新闻">
 		<title>联系我们</title>
+		<script type="text/javascript" src="js/jquery-2.2.4.min(1).js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/np-css/np-contact.css"/>
 		<link rel="stylesheet" type="text/css" href="css/np-header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/np-contact.css"/>
 		<link rel="stylesheet" type="text/css" href="iconfont/np-font/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="iconfont/np-font/icon/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GIbQFxIdebmU36snBHxqNrD1dvcPpn5X"></script>
 	</head>
 	<body>
 	<!--导航-->
@@ -24,7 +28,7 @@
 				</div>
 				<ul  class="np-space">
 					<li>
-						<a href="#">首&nbsp;页</a>
+						<a href="#">首页</a>
 					</li>
 					<li>
 						<a href="#">品牌介绍</a>
@@ -51,21 +55,25 @@
 						<a href="#">联系我们</a>
 					</li>
 				</ul>
+				<div class="line">
+					<div class="cre"></div>
+				</div>
 			</div>
 		</div>
 	<!--导航结束-->
+
 	<!--内容-->
 	<main>
 		<ul class="np-page">
-			<li>HOME</li>
-			<li><a href="#"><span>首页&nbsp;&nbsp;>&nbsp;&nbsp;</span></a></li>
-			<li>ABOUT</li>
-			<li><a href="#"><span class="np-color">联系我们</span></a></li>
+			<li>HOME<sapn class='np-dian'></sapn></li>
+			<li><a href="#"><span>&nbsp;首页&nbsp;&nbsp;>&nbsp;&nbsp;</span></a></li>
+			<li>ABOUT<sapn class='np-dian np-dian1'></sapn></li>
+			<li><a href="#"><span class="np-color">&nbsp;联系我们</span></a></li>
 		</ul>
 		<div class="np-out">
 			<img  src="img/np/np-ou.jpg" alt=""/>
 			<div class="top">
-				<p>团队风采</p>
+				<p>联系我们</p>
 				<p>GARNEL BUSINESS TEAMS</p>
 				<div class="line"></div>
 				<div class="point"></div>
@@ -76,33 +84,35 @@
 		</div>
 		<form class="m-top-50" id="form">
 			<p>CONTACT US</p>
-           <input type="text" class="np-input np-left" placeholder="CONTACT US" style="height: 44px;">
-            <input type="text" class="np-input" placeholder="CONTACT US" style="height: 44px;">
-            <textarea class="np-input np-big" placeholder="CONTACT US"></textarea>
-            <input type="text" class="np-input np-text" placeholder="CONTACT US" style="height: 44px;">
+           <input type="text" class="np-input np-left" placeholder="CONTACT US" name="inputt">
+            <input type="text" class="np-input" placeholder="CONTACT US" name="inputt">
+            <textarea class="np-input np-big" placeholder="CONTACT US" name="np-big"></textarea>
+            <input type="text" class="np-input np-text" placeholder="CONTACT US" name="inputt">
         </form>
 		<div class="np-map">
-			<img src="img/np/np-map.png" alt="加载失败"/ >
+			 <!--百度地图容器-->
+		    <div style="width:1002px;height:523px;border:#ccc solid 1px;font-size:18px" id="map"></div>
+		    
 		</div>
 	</main>
 
 	<!--内容结束-->	
-	<!--底部导航-->
-	<footer>
+	<!--底部-->
+		<footer>
 		<div class="np-last">
 			<div class="np-end">
-				<h5>CONTACT US<i class="iconfont">&#xe659;</i></h5>
+				<h5>CONTACT <span>US</span><i class="iconfont">&#xe659;</i></h5>
 				<h6>联系我们</h6>
 				<ul>
 					<li><i class="iconfont">&#xe664;</i>山西太原长风大街长风画卷A座2 单元三层。 <span>3 xueyuan road, taiyuan city, Shanxi Province</span>
 					<li><i class="iconfont">&#xe6be;</i>太原管理中心：0315-7552788  QQ:2894246186</li>
 					</li>
-					<li><i class="iconfont">&#xe61f;</i>lxy@nuc.edu.cn</li>	
-					<li><i class="iconfont">&#xe625;</i>京ICP备12046704号</li>	
+					<li><i class="iconfont">&#xe6e8;</i>lxy@nuc.edu.cn</li>	
+					<li><i class="iconfont">&#xe63d;</i>京ICP备12046704号</li>	
 				</ul>
 			</div>
 			<div class="np-end np-pro">
-				<h5>Fast track<i class="iconfont">&#xe64a;</i></h5>
+				<h5>Fast <span>track</span><i class="iconfont">&#xe64a;</i></h5>
 				<h6>快速通道</h6>
 				<ul>
 					<li>
@@ -119,37 +129,92 @@
 					</li>
 				</ul>
 			</div>
-			<div class="np-end">
+			<div class="np-image">
 				<img src="img/np/np-wei_06.jpg" alt="加载失败"/>
 			</div>
 		</div>
 	</footer>
-	<!--底部结束-->
+		<!--底部结束-->
 	</body>
 	<script>
 		//单个文本点击获取焦点效果
-	var input=document.querySelectorAll("#form input[type='text']");
-	input.forEach(function(val,index){
-		val.onfocus=function(){
-			this.style.border="2px solid #FF3795"
+	var input=document.getElementsByClassName("np-input");
+	for(var i=0;i<input.length;i++){
+		input[i].onfocus=function(){
+			this.style.border="3px solid #FF3795";
 		}
-		val.onblur=function(){
-			this.style.border="2px solid #FFC9E3"
+		input[i].onblur=function(){
+			this.style.border="3px solid #FFC9E3";
 		}
-	})
-	
-	//多行文本点击获取焦点效果
-	var textinput=document.querySelectorAll("#form .np-big");
-	textinput.forEach(function(val,index){
-		val.onfocus=function(){
-			this.style.border="2px solid #FF3795"
-		}
-		val.onblur=function(){
-			this.style.border="2px solid #FFC9E3"
-		}
-	})
+	}
+
 
 	</script>
+	<!--地图内容-->
+	 <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(112.572565,37.823125),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"众派家具400-0356-869",imageOffset: {width:0,height:3},position:{lat:37.824892,lng:112.570337}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      var labels = [
+      ];
+      for(var index = 0; index < labels.length; index++){
+        var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+        var label = new BMap.Label(labels[index].content,opt);
+        map.addOverlay(label);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
 </html>
 
 
