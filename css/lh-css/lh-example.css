@@ -1,56 +1,60 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+/* banner开始 */
+.banner{
+	position:relative;
+	overflow: auto;
+	text-align: center;
+	height: 638px !important;
 }
-.lh-banner{
-	width: 100%;
-	height: 450px;
-	position: relative;
+.banner li { list-style: none; }
 
+.banner ul li { float: left; }
 
+#b03{
+ width:100%;
+ position: relative;
+ margin: auto;
 }
-.lh-banner .lh-imgBox{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-.lh-banner .lh-imgBox a{
-	display: block;
-}
-.lh-banner .lh-imgBox img{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.lh-banner .dot{
-	width: 100px;
-	height: 30px;
-	position: absolute;
-	left: 0;
+
+#b03 .dots{ 
+	position: absolute; 
+	left: 0; 
 	right: 0;
-	margin: auto;
 	bottom: 20px;
-	overflow: hidden;
 }
-.lh-banner .dot li{
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	margin: 0px 5px;
+
+#b03 .dots li{ 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	margin: 0 4px; 
+	text-indent: -999em; 
 	background: #fff;
-	float: left;
+	border-radius: 6px; 
+	cursor: pointer; 
+	-webkit-transition: background .5s, opacity .5s; 
+	-moz-transition: background .5s, opacity .5s; 
+	transition: background .5s, opacity .5s;
+}
+
+#b03 .dots li.active{
+	width: 18px !important;
+	background: #fff;
+	opacity: 1;
+}
+/* banner结束 */
+.black{
+	width: 1000px;
+	height: 6px;
+	background: #000;
+	margin: auto;
 }
 
 .lh-container{
 	width: 1000px;
 	margin: auto;
-	overflow: hidden;
 	margin-top: 30px;
 }
+/* 面包屑导航 */
 .lh-container .lh-brand{
 	overflow: hidden;
 	margin-bottom: 70px;
@@ -84,11 +88,83 @@
 	margin-left: 3px;
 	font-size: 18px;
 }
-.lh-copy{
+/* 标题 */
+ .jionTitle {
+	width: 300px;
+	height: 75px;
+	margin-bottom: 50px;
+	position: relative;
+}
+ .jionTitle p{
+	font-weight: bold;
+	font-family: "微软雅黑";
 	color: #333;
 }
-.lh-copy span{
+ .jionTitle span {
+	color: #999;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+ .jionTitle .topLine {
+	position: absolute;
+	top: 28px;
+	width: 120px;
+	border-bottom: 1px dashed #CBCBCB;
+}
+ .jionTitle .topDoc {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 26px;
+	left: 115px;
+	background: #CBCBCB;
+ 	border-radius: 50%;
+}
+ .jionTitle .con {
+	line-height: 60px;
+	width: 100%;
 	font-size: 22px;
+	color: #333;
+	word-spacing: 6px;
+}
+ .jionTitle .con span{
+	display: inline-block;
+	font-size: 14px;
+	box-sizing:border-box;
+	vertical-align: middle;
+}
+ .jionTitle .botLine {
+	position: absolute;
+	top: 75px;
+	width: 150px;
+	border-bottom: 1px dashed #333;
+}
+ .jionTitle .botDoc {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 73px;
+	left: 152px;
+	background: #333;
+ 	border-radius: 50%;
+ 	behavior: url(border-radius.htc);
+}
+ .jionTitle .botblk {
+	width: 16px;
+	height: 4px;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	background: #333;
+}
+
+.lh-copy{
+	color: #333;
+	font-size: 22px;
+}
+.lh-copy span{
+	font-size: 18px;
+	vertical-align:middle;
 }
 .lh-xu{
 	width: 100px;
@@ -110,11 +186,11 @@
 	height: 1px;
 	border-bottom: 1px dashed #666;
 }
-.lh-example{
-	overflow: hidden;
-}
+/* 列表开始 */
+
 .lh-example .lh-floor{
 	position: relative;
+	width: 100%;
 	height: 180px;
 	margin-top: 30px;
 }
@@ -127,12 +203,11 @@
 	color: #fff;
 	font-size: 76px;
 	background: #999;
-	float: left;
 	overflow: hidden;
-	transition: all 1s;
+	transition: all 0.5s;
 	position: absolute;
 	top: 30px;
-	left: 0px;
+	left: 0;
 }
 .lh-example .lh-floor .lh-left .lh-word{
 	float: left;
@@ -176,7 +251,7 @@
 	left: 150px;
 	top: 0;
 	z-index: 999;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 .lh-example .lh-floor .lh-middle img{
 	width: 100%;
@@ -276,27 +351,35 @@
 	right: 50px;
 	font-size: 15px;
 	opacity: 0;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 .lh-example .lh-floor:hover .lh-jiantou{
 	opacity: 1;
 }
 .lh-example .lh-floor:hover .lh-left{
-	left: -3px;
+	left: -20px;
 	background: #fc1873;
 }
 .lh-example .lh-floor:hover .lh-middle{
 	width: 296px;
 	height: 184px;
 }
+/* 列表结束 */
 .lh-fenye{
 	width: 80px;
 	height: 30px;
-	background: #666;
+	background: #999;
 	margin: 30px auto;
 	color: #000;
 	border-radius: 10px;
 	font-size: 12px;
 	text-align: center;
 	line-height: 30px;
+}
+
+.jianbian{
+	width: 100%;
+	height:1px;
+	margin:0 auto 79px;
+	background-image:linear-gradient(to left,#fff,#ddd,#fff);
 }
